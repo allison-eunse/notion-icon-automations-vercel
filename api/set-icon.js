@@ -27,11 +27,12 @@ export default async function handler(req, res) {
 
     const map = {
       lecture: "👩‍🏫", // woman teacher
-      assignment: "📝",
-      exam: "📕",
-      lab: "🧪",
-      meeting: "🗓️",
-      default: "📌",
+      assignment: "📖",
+      exam: "💯",
+      lab_werk: "🥼",
+      lab_meeting: "🧑‍🧒",
+      hangout: "👯‍♀️",
+      lab_출근: "🚶‍♀️",
     };
     const emoji = map[(taskType || "").toLowerCase()] || map.default;
 
