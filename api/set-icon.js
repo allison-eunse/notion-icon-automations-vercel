@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${process.env.NOTION_TOKEN}`,
-        "Notion-Version": "2022-06-28",
+        "Notion-Version": NOTION_VERSION,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ icon: { type: "emoji", emoji } }),
