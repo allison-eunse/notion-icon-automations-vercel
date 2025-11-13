@@ -33,6 +33,7 @@ export default async function handler(req, res) {
       lab_meeting: "🧑‍🧒",
       hangout: "👯‍♀️",
       lab_출근: "🚶‍♀️",
+       default: "📌",
     };
     const emoji = map[(taskType || "").toLowerCase()] || map.default;
 
